@@ -15,10 +15,73 @@ class DocsLibrary extends StatelessWidget {
   final String title;
   final String subtitle;
   final FirebaseFirestore firestoro = FirebaseFirestore.instance;
+  final TextEditingController nameController = TextEditingController();
+  final TextEditingController attachmentController = TextEditingController();
   @override
   Widget build(BuildContext context) {
     return SafeArea(
       child: Scaffold(
+        floatingActionButton: FloatingActionButton(
+          child: Icon(Feather.file_plus),
+          onPressed: () {
+            Get.defaultDialog(
+              title: "New Document",
+              content: Column(
+                children: [
+                  TextFormField(
+                    controller: nameController,
+                    decoration: InputDecoration(
+                      hintText: 'Name',
+                      suffixIcon: Icon(Feather.edit),
+                      border: OutlineInputBorder(
+                        borderRadius: BorderRadius.circular(20.0),
+                      ),
+                    ),
+                  ),
+                  TextFormField(
+                    controller: attachmentController,
+                    decoration: InputDecoration(
+                      hintText: 'Attachment Link',
+                      suffixIcon: Icon(Feather.file),
+                      border: OutlineInputBorder(
+                        borderRadius: BorderRadius.circular(20.0),
+                      ),
+                    ),
+                  ),
+                  SizedBox(
+                    width: 500,
+                    height: 40,
+                    child: ElevatedButton(
+                      child: Row(
+                        mainAxisAlignment: MainAxisAlignment.center,
+                        children: [
+                          Icon(Feather.save),
+                          SizedBox(
+                            width: 10,
+                          ),
+                          Text(
+                            "Save & Close",
+                            style: TextStyle(
+                                fontSize: 15, fontWeight: FontWeight.bold),
+                          )
+                        ],
+                      ),
+                      onPressed: () {
+                        if (null == null) {
+                          Get.back();
+                        } else {
+                          Get.snackbar("No Type Selected",
+                              "Please Select at Least One Type of Products");
+                        }
+                        print("f.filters".toString());
+                      },
+                    ),
+                  )
+                ],
+              ),
+            );
+          },
+        ),
         body: Center(
           child: Container(
             child: Column(

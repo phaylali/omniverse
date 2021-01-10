@@ -9,13 +9,13 @@ class Product {
   final String pQuantity;
 
   Product({
-    this.pId,
-    this.pName,
-    this.pType,
-    this.pImage,
-    this.pPrice,
-    this.pOldPrice,
-    this.pDescription,
-    this.pQuantity,
+    required this.pId,
+    required this.pName,
+    required this.pType,
+    required this.pImage,
+    required this.pPrice,
+    required this.pOldPrice,
+    required this.pDescription,
+    required this.pQuantity,
   });
 }

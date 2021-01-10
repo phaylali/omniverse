@@ -5,7 +5,7 @@ author: Phaylali
 homepage: https://omniverse.dev
 
 environment:
-  sdk: ">=2.12.0-29.10.beta <3.0.0"
+  sdk: ">=2.12.0-0 <3.0.0"
   flutter: ">=1.17.0"
 
 dependencies:
@@ -18,10 +18,9 @@ dependencies:
   flutter_icons:
 
   # Firebase Packages
-  firebase_auth:
-  cloud_firestore:
-  firebase_core: 
-  firebase_analytics:
+  firebase_auth: ^0.18.4+1
+  cloud_firestore: ^0.14.4
+  firebase_core: ^0.5.3
   thumbnailer:
   url_launcher:
   native_pdf_view:
@@ -39,5 +38,4 @@ flutter:
 
   uses-material-design: true
   assets:
-    - assets/images/default.png
-    - assets/images/defaultDark.png
+    - assets/images/

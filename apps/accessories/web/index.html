@@ -33,19 +33,12 @@
   <script src="https://www.gstatic.com/firebasejs/7.20.0/firebase-firestore.js"></script>
   <script src="https://www.gstatic.com/firebasejs/8.0.2/firebase-auth.js"></script>
 
-  <script>
+  <script src="./firebase-config.js"></script>
+
+  <!-- https://stackoverflow.com/questions/950087/how-do-i-include-a-javascript-file-in-another-javascript-file -->
+  <script type="module">
     // Your web app's Firebase configuration
-    // For Firebase JS SDK v7.20.0 and later, measurementId is optional
-    var firebaseConfig = {
-      apiKey: "AIzaSyBlZDHZLGys4i6lMviXyjP4PjBDH5XpA-8",
-      authDomain: "omni-accessories.firebaseapp.com",
-      databaseURL: "https://omni-accessories.firebaseio.com",
-      projectId: "omni-accessories",
-      storageBucket: "omni-accessories.appspot.com",
-      messagingSenderId: "67295065564",
-      appId: "1:67295065564:web:d8101c37246d5a567e8b19",
-      measurementId: "G-GMTTTZX2JF"
-    };
+    import { firebaseConfig } from './firebase-config.js';
     // Initialize Firebase
     firebase.initializeApp(firebaseConfig);
     firebase.analytics();

@@ -1,5 +1,7 @@
 import 'package:flutter/material.dart';
+// ignore: import_of_legacy_library_into_null_safe
 import 'package:flutter_icons/flutter_icons.dart';
+// ignore: import_of_legacy_library_into_null_safe
 import 'package:get/get.dart';
 
 import 'logic.dart';
@@ -96,7 +98,7 @@ class Store extends StatelessWidget {
                                                         .textTheme
                                                         .bodyText2),
                                                 value: f.chosen1.value,
-                                                onChanged: (bool value) {
+                                                onChanged: (bool? value) {
                                                   f.chosen1.value = value;
                                                   //f.unchose(value);
                                                   f.update();
@@ -112,7 +114,7 @@ class Store extends StatelessWidget {
                                                         .textTheme
                                                         .bodyText2),
                                                 value: f.chosen2.value,
-                                                onChanged: (bool value) {
+                                                onChanged: (bool? value) {
                                                   f.chosen2.value = value;
                                                   //f.unchose(value);
                                                   f.update();
@@ -128,7 +130,7 @@ class Store extends StatelessWidget {
                                                         .textTheme
                                                         .bodyText2),
                                                 value: f.chosen3.value,
-                                                onChanged: (bool value) {
+                                                onChanged: (bool? value) {
                                                   f.chosen3.value = value;
                                                   //f.unchose(value);
                                                   f.update();
@@ -144,7 +146,7 @@ class Store extends StatelessWidget {
                                                         .textTheme
                                                         .bodyText2),
                                                 value: f.chosen4.value,
-                                                onChanged: (bool value) {
+                                                onChanged: (bool? value) {
                                                   //f.unchose(value);
                                                   f.chosen4.value = value;
                                                   f.update();
