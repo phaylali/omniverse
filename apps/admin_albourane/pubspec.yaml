@@ -23,9 +23,9 @@ dependencies:
       url: git://github.com/phaylali/omniverse.git
 
   # Firebase Packages
-  firebase_auth: ^0.18.4+1
-  cloud_firestore: ^0.14.4
-  firebase_core: ^0.5.3
+  firebase_auth: 
+  cloud_firestore: 
+  firebase_core: 
   
 
   # App Specific Packages
