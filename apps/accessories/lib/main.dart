@@ -6,7 +6,9 @@ import 'package:omniverse/themes.dart';
 import 'package:omniverse/cart.dart';
 
 import 'package:flutter/material.dart';
+// ignore: import_of_legacy_library_into_null_safe
 import 'package:get/get.dart';
+// ignore: import_of_legacy_library_into_null_safe
 import 'package:firebase_core/firebase_core.dart';
 
 void main() async {
