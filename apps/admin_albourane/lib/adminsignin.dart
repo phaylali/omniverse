@@ -1,9 +1,9 @@
-import '../lib/auth.dart';
+
 import 'package:flutter/material.dart';
-// ignore: import_of_legacy_library_into_null_safe
 import 'package:flutter_icons/flutter_icons.dart';
-// ignore: import_of_legacy_library_into_null_safe
 import 'package:get/get.dart';
+
+import 'auth.dart';
 
 class AdminSignIn extends GetWidget<AuthController> {
   final TextEditingController emailController = TextEditingController();

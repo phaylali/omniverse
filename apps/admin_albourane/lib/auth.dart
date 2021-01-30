@@ -1,17 +1,9 @@
-// ignore: import_of_legacy_library_into_null_safe
 
-// ignore: import_of_legacy_library_into_null_safe
 import 'package:firebase_auth/firebase_auth.dart';
-//import 'package:flutter/foundation.dart';
-// ignore: import_of_legacy_library_into_null_safe
 import 'package:get/get.dart';
-//import 'package:todo_app/controllers/userController.dart';
-
-// ignore: import_of_legacy_library_into_null_safe
 import 'package:cloud_firestore/cloud_firestore.dart';
-// ignore: import_of_legacy_library_into_null_safe
-import '../lib/main.dart';
-//import 'package:cloud_firestore/cloud_firestore.dart';
+
+import 'main.dart';
 
 class Database {
   final FirebaseFirestore _firestore = FirebaseFirestore.instance;

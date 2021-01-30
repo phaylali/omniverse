@@ -25,7 +25,7 @@ dependencies:
   # Firebase Packages
   firebase_auth:
   cloud_firestore:
-  firebase_core: ^0.5.0
+  firebase_core: 
   firebase_analytics:
 
   # App Specific Packages

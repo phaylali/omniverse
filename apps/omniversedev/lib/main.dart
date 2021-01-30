@@ -1,7 +1,5 @@
 import 'package:flutter/material.dart';
-// ignore: import_of_legacy_library_into_null_safe
 import 'package:get/get.dart';
-// ignore: import_of_legacy_library_into_null_safe
 import 'package:get_storage/get_storage.dart';
 
 import 'package:omniverse/themes.dart';
