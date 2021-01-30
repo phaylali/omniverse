@@ -1,7 +1,7 @@
-import 'package:admin_albourane/auth.dart';
-import 'package:admin_albourane/home.dart';
-import 'package:admin_albourane/profile.dart';
-import 'package:admin_albourane/adminsignin.dart';
+import '../lib/auth.dart';
+import '../lib/home.dart';
+import '../lib/profile.dart';
+import '../lib/adminsignin.dart';
 import 'package:omniverse/docs.dart';
 import 'package:omniverse/documentPage.dart';
 import 'package:omniverse/error404.dart';

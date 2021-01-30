@@ -1,5 +1,5 @@
 // ignore: import_of_legacy_library_into_null_safe
-import 'package:admin_albourane/main.dart';
+
 // ignore: import_of_legacy_library_into_null_safe
 import 'package:firebase_auth/firebase_auth.dart';
 //import 'package:flutter/foundation.dart';
@@ -9,6 +9,8 @@ import 'package:get/get.dart';
 
 // ignore: import_of_legacy_library_into_null_safe
 import 'package:cloud_firestore/cloud_firestore.dart';
+// ignore: import_of_legacy_library_into_null_safe
+import '../lib/main.dart';
 //import 'package:cloud_firestore/cloud_firestore.dart';
 
 class Database {

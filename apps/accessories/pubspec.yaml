@@ -19,7 +19,8 @@ dependencies:
   get_storage:
   flutter_icons:
   omniverse:
-    path: /home/phaylali/Documents/omniverse
+    git:
+      url: git://github.com/phaylali/omniverse.git
 
   # Firebase Packages
   firebase_auth:
