@@ -8,6 +8,7 @@ import 'package:flutter/material.dart';
 import 'package:get/get.dart';
 // ignore: import_of_legacy_library_into_null_safe
 import 'package:firebase_core/firebase_core.dart';
+import 'package:omniverse/newdoc.dart';
 
 import 'adminsignin.dart';
 import 'auth.dart';
@@ -28,6 +29,12 @@ class Start extends StatelessWidget {
         getPages: [
           GetPage(name: '/', page: () => Root()),
           GetPage(name: '/SignIn', page: () => AdminSignIn()),
+          GetPage(
+              name: '/NewDocument',
+              page: () => NewDocument(
+                    title: 'New Document',
+                    subtitle: 'something',
+                  )),
           GetPage(
               name: '/Documents',
               page: () => DocsLibrary(
