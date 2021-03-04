@@ -11,10 +11,7 @@ environment:
 dependencies:
   flutter:
     sdk: flutter
-  #flutter_localizations:
-  #  sdk: flutter
 
-  # General Packages
   get:
 
   flutter_icons:

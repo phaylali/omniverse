@@ -364,7 +364,7 @@ packages:
     description:
       path: "."
       ref: HEAD
-      resolved-ref: "923b70c1e85acd786734d043da5d89ddabc4313a"
+      resolved-ref: "0377057810d2a7216f1d7cc2a6debe1a80c376f0"
       url: "git://github.com/phaylali/omniverse.git"
     source: git
     version: "0.0.1"
