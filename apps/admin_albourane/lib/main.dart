@@ -9,6 +9,7 @@ import 'package:get/get.dart';
 // ignore: import_of_legacy_library_into_null_safe
 import 'package:firebase_core/firebase_core.dart';
 import 'package:omniverse/newdoc.dart';
+import 'package:url_strategy/url_strategy.dart';
 
 import 'adminsignin.dart';
 import 'auth.dart';
@@ -18,6 +19,7 @@ import 'profile.dart';
 void main() async {
   WidgetsFlutterBinding.ensureInitialized();
   await Firebase.initializeApp();
+  setPathUrlStrategy();
   runApp(Start());
 }
 
