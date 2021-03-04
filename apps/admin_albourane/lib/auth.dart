@@ -11,8 +11,8 @@ class Database {
   final FirebaseFirestore _firestore = FirebaseFirestore.instance;
 
   void getCurrentUser() async {
-    User userr = FirebaseAuth.instance.currentUser;
-    Get.find<UserController>().user = await Database().getUser(userr.uid);
+    User? userr = FirebaseAuth.instance.currentUser;
+    Get.find<UserController>().user = await Database().getUser(userr!.uid);
   }
 
   Future<bool> createNewUser(UserModel user) async {
@@ -100,7 +100,7 @@ class AuthController extends GetxController {
           email: email, password: password);
       //create user in database.dart
       UserModel _user =
-          UserModel(id: _authRes.user.uid, name: name, email: email);
+          UserModel(id: _authRes.user!.uid, name: name, email: email);
       if (await Database().createNewUser(_user)) {
         Get.find<UserController>().user = _user;
         Get.back();
@@ -138,7 +138,7 @@ class AuthController extends GetxController {
       UserCredential _authRes = await _auth.signInWithEmailAndPassword(
           email: email, password: password);
       Get.find<UserController>().user =
-          await Database().getUser(_authRes.user.uid);
+          await Database().getUser(_authRes.user!.uid);
     } catch (e) {
       Get.snackbar(
         "Error signing in",
