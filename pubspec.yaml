@@ -25,13 +25,11 @@ dependencies:
   url_launcher:
   native_pdf_view:
 
-  # App Specific Packages
-  flutter_sheet_localization:
 
 dev_dependencies:
   flutter_test:
     sdk: flutter
-  flutter_sheet_localization_generator:
+  
   build_runner:
 
 flutter:
