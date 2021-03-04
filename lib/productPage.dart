@@ -1,6 +1,5 @@
 import 'dart:ui';
 
-// ignore: import_of_legacy_library_into_null_safe
 import 'package:cloud_firestore/cloud_firestore.dart';
 import 'package:flutter/material.dart';
 
@@ -10,7 +9,6 @@ import 'package:flutter_icons/flutter_icons.dart';
 // ignore: import_of_legacy_library_into_null_safe
 import 'package:get/get.dart';
 
-// ignore: import_of_legacy_library_into_null_safe
 import 'package:url_launcher/url_launcher.dart';
 
 import 'error404.dart';
@@ -54,7 +52,7 @@ class ProductPage extends StatelessWidget {
                                         StadiumBorder())),
                             child: Center(
                                 child: Text(
-                              '${data['name']}',
+                              '${d['name']}',
                               maxLines: 2,
                               overflow: TextOverflow.ellipsis,
                               style: TextStyle(
@@ -72,8 +70,8 @@ class ProductPage extends StatelessWidget {
                                   content: Expanded(
                                     child: InteractiveViewer(
                                       child: Center(
-                                          child: Image.network(
-                                              '${data['image']}')),
+                                          child:
+                                              Image.network('${d['image']}')),
                                     ),
                                   ))
                               : null,
@@ -82,8 +80,7 @@ class ProductPage extends StatelessWidget {
                                   RoundedRectangleBorder(
                                       borderRadius:
                                           BorderRadius.circular(30)))),
-                          child:
-                              Center(child: Image.network('${data['image']}')),
+                          child: Center(child: Image.network('${d['image']}')),
                         ),
                         SizedBox(
                           height: 10,
@@ -101,7 +98,7 @@ class ProductPage extends StatelessWidget {
                               mainAxisAlignment: MainAxisAlignment.spaceEvenly,
                               children: [
                                 Text(
-                                  '${data['oldPrice']}' + ' \$',
+                                  '${d['oldPrice']}' + ' \$',
                                   style: TextStyle(
                                       color: Colors.black,
                                       fontSize: 20,
@@ -119,7 +116,7 @@ class ProductPage extends StatelessWidget {
                                           fontWeight: FontWeight.bold),
                                     ),
                                     Text(
-                                      '${data['price']}' + ' \$',
+                                      '${d['price']}' + ' \$',
                                       style: TextStyle(
                                           fontSize: 20,
                                           fontWeight: FontWeight.bold),
@@ -137,7 +134,7 @@ class ProductPage extends StatelessWidget {
                                           fontWeight: FontWeight.bold),
                                     ),
                                     Text(
-                                      '${data['quantity']}' + ' Units',
+                                      '${d['quantity']}' + ' Units',
                                       style: TextStyle(
                                           fontSize: 20,
                                           fontWeight: FontWeight.bold),
@@ -216,7 +213,7 @@ class ProductPage extends StatelessWidget {
                                 Row(
                                   children: [
                                     Text(
-                                      'Type : ${data['type']}',
+                                      'Type : ${d['type']}',
                                       style: TextStyle(
                                           fontSize: 25,
                                           fontWeight: FontWeight.bold),
@@ -237,7 +234,7 @@ class ProductPage extends StatelessWidget {
                                     IconButton(
                                       icon: Icon(Feather.youtube),
                                       onPressed: () {
-                                        launch('${data['video']}');
+                                        launch('${d['video']}');
                                       },
                                     )
                                   ],
@@ -260,7 +257,7 @@ class ProductPage extends StatelessWidget {
                                 ),
                                 Expanded(
                                   child: Text(
-                                    '${data['description']}',
+                                    '${d['description']}',
                                     style: TextStyle(
                                         fontSize: 25,
                                         fontWeight: FontWeight.bold),

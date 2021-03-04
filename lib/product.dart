@@ -1,4 +1,3 @@
-// ignore: import_of_legacy_library_into_null_safe
 import 'package:cloud_firestore/cloud_firestore.dart';
 
 class ProductModel {
@@ -18,14 +17,14 @@ class ProductModel {
 
   ProductModel.fromDocumentSnapshot(DocumentSnapshot documentSnapshot) {
     id = documentSnapshot.id;
-    reference = documentSnapshot.data()["reference"];
-    name = documentSnapshot.data()["name"];
-    price = documentSnapshot.data()["price"];
-    oldPrice = documentSnapshot.data()["oldPrice"];
-    description = documentSnapshot.data()["description"];
-    type = documentSnapshot.data()["type"];
-    quantity = documentSnapshot.data()["quantity"];
-    image = documentSnapshot.data()["image"];
-    video = documentSnapshot.data()["video"];
+    reference = documentSnapshot["reference"];
+    name = documentSnapshot["name"];
+    price = documentSnapshot["price"];
+    oldPrice = documentSnapshot["oldPrice"];
+    description = documentSnapshot["description"];
+    type = documentSnapshot["type"];
+    quantity = documentSnapshot["quantity"];
+    image = documentSnapshot["image"];
+    video = documentSnapshot["video"];
   }
 }

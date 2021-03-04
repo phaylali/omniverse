@@ -16,7 +16,7 @@ dependencies:
 
   # General Packages
   get:
-  get_storage:
+
   flutter_icons:
   url_strategy: 
   omniverse:
@@ -28,12 +28,6 @@ dependencies:
   cloud_firestore: 1.0.0
   firebase_core: 1.0.0
   
-
-  # App Specific Packages
-  simple_gravatar:
-  #flutter_sheet_localization:
-  
-
 
 
 dev_dependencies:

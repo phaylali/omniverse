@@ -1,4 +1,3 @@
-// ignore: import_of_legacy_library_into_null_safe
 import 'package:cloud_firestore/cloud_firestore.dart';
 
 class DocumentModel {
@@ -12,11 +11,11 @@ class DocumentModel {
 
   DocumentModel.fromDocumentSnapshot(DocumentSnapshot documentSnapshot) {
     id = documentSnapshot.id;
-    dateCreation = documentSnapshot.data()["dateCreation"];
-    name = documentSnapshot.data()["name"];
-    description = documentSnapshot.data()["description"];
-    dateEdited = documentSnapshot.data()["dateEdited"];
-    attachment = documentSnapshot.data()["attachment"];
-    preview = documentSnapshot.data()["preview"];
+    dateCreation = documentSnapshot["dateCreation"];
+    name = documentSnapshot["name"];
+    description = documentSnapshot["description"];
+    dateEdited = documentSnapshot["dateEdited"];
+    attachment = documentSnapshot["attachment"];
+    preview = documentSnapshot["preview"];
   }
 }
