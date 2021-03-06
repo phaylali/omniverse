@@ -31,7 +31,7 @@ class ProductPage extends StatelessWidget {
             DocumentSnapshot? d = snapshot.data;
 
             if (d!.exists) {
-              Map<String?, dynamic>? data = d.data();
+              //Map<String?, dynamic>? data = d.data();
               return SafeArea(
                 child: Scaffold(
                   body: Center(
